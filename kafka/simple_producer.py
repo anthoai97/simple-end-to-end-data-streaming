@@ -4,6 +4,7 @@ import time
 import uuid
 from confluent_kafka import Producer
 import json
+import pytz
 
 delay = 0.7
 
@@ -82,10 +83,11 @@ if __name__ == '__main__':
         while True:
             time.sleep(delay)
             # JSON data to be produced
-            random_number = random.randint(0, 2)
+            random_number = 0
             random_number2 = random.randint(0, 10)
             json_data = requests[random_number]
-            now = datetime.now()
+            local_tz = pytz.timezone('Asia/Bangkok')
+            now = datetime.now(local_tz)
             session = {
                     "id":  uuid.uuid4().hex,
                     "start": f"{now}",

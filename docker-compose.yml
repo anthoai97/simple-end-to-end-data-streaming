@@ -13,6 +13,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    volumes:
+      - ./data/kafka/data:/var/lib/kafka/data
     # networks:
     #   - confluent
 
@@ -52,6 +54,9 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    volumes:
+      - ./data/zookeeper/data:/data
+      - ./data/zookeeper/datalog:/datalog
 
   cassandra_db:
     image: cassandra:latest
