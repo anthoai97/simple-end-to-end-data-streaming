@@ -58,9 +58,9 @@
                                     <a class="nav-link" href="./">
                                         <span
                                             class="nav-link-icon d-md-none d-lg-inline-block"
-                                            ><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                                            ><!-- Download SVG icon from tabler-icons.io/i/home -->
                                             <svg
-                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns="www.w3.org/2000/svg"
                                                 class="icon"
                                                 width="24"
                                                 height="24"
@@ -104,9 +104,9 @@
                                 >
                                     <div class="input-icon">
                                         <span class="input-icon-addon">
-                                            <!-- Download SVG icon from http://tabler-icons.io/i/search -->
+                                            <!-- Download SVG icon from tabler-icons.io/i/search -->
                                             <svg
-                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns="www.w3.org/2000/svg"
                                                 class="icon"
                                                 width="24"
                                                 height="24"
@@ -146,25 +146,15 @@
                 <!-- Page header -->
                 <div class="page-header d-print-none">
                     <div class="container-xl">
-                        <div class="row g-2 align-items-center">
-                            <div class="col">
-                                <h2 class="page-title">Charts</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Page body -->
-                <div class="page-body">
-                    <div class="container-xl">
-                        <div class="row row-cards">
-                            <div class="col-12">
+                        <div class="row row-deck row-cards">
+                            <div class="col-sm-6 col-lg-3">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="d-flex">
-                                            <h3 class="card-title">
-                                                API Request Summary
-                                            </h3>
-                                            <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="subheader">
+                                                Total Request
+                                            </div>
+                                            <div class="ms-auto lh-1">
                                                 <div class="dropdown">
                                                     <a
                                                         class="dropdown-toggle text-secondary"
@@ -172,7 +162,7 @@
                                                         data-bs-toggle="dropdown"
                                                         aria-haspopup="true"
                                                         aria-expanded="false"
-                                                        >Last 7 days</a
+                                                        >Project 1</a
                                                     >
                                                     <div
                                                         class="dropdown-menu dropdown-menu-end"
@@ -180,23 +170,99 @@
                                                         <a
                                                             class="dropdown-item active"
                                                             href="#"
-                                                            >Last 7 days</a
+                                                            >Project 1</a
                                                         >
-                                                        <a
-                                                            class="dropdown-item"
-                                                            href="#"
-                                                            >Last 30 days</a
-                                                        >
-                                                        <a
-                                                            class="dropdown-item"
-                                                            href="#"
-                                                            >Last 3 months</a
-                                                        >
+                                                        <!-- <a class="dropdown-item" href="#">Last 30 days</a> -->
+                                                        <!-- <a class="dropdown-item" href="#">Last 3 months</a> -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div
+                                            class="d-flex align-items-baseline"
+                                        >
+                                            <div class="h1 mb-0 me-2" id="project-1-total">
+                                                0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="subheader">
+                                                Total Request
+                                            </div>
+                                            <div class="ms-auto lh-1">
+                                                <div class="dropdown">
+                                                    <a
+                                                        class="dropdown-toggle text-secondary"
+                                                        href="#"
+                                                        data-bs-toggle="dropdown"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false"
+                                                        >Project 2</a
+                                                    >
+                                                    <div
+                                                        class="dropdown-menu dropdown-menu-end"
+                                                    >
+                                                        <a
+                                                            class="dropdown-item active"
+                                                            href="#"
+                                                            >Project 2</a
+                                                        >
+                                                        <!-- <a class="dropdown-item" href="#">Last 30 days</a> -->
+                                                        <!-- <a class="dropdown-item" href="#">Last 3 months</a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-baseline"
+                                        >
+                                            <div class="h1 mb-0 me-2" id="project-2-total">
+                                                0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Page body -->
+                <div class="page-body">
+                    <div class="container-xl">
+                        <div class="row row-cards mb-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <h3 class="card-title">
+                                                API Request Summary project 1
+                                            </h3>
+                                        </div>
                                         <div id="chart-social-referrals"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-cards mb-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <h3 class="card-title">
+                                                API Request Summary Project 2
+                                            </h3>
+                                        </div>
+                                        <div
+                                            id="chart-social-referrals-2"
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
@@ -242,9 +308,9 @@
                                             class="link-secondary"
                                             rel="noopener"
                                         >
-                                            <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+                                            <!-- Download SVG icon from tabler-icons.io/i/heart -->
                                             <svg
-                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns="www.w3.org/2000/svg"
                                                 class="icon text-pink icon-filled icon-inline"
                                                 width="24"
                                                 height="24"
@@ -303,7 +369,7 @@
         <script src="./dist/js/demo.min.js?1692870487" defer></script>
         <script>
             async function fetchData(project_id, range) {
-                const apiUrl = "http://localhost:8000/api/request-chart";
+                const apiUrl = "https://5ac6-14-169-53-169.ngrok-free.app/api/request-chart";
 
                 // Function to encode the query parameters
                 const encodeParams = (params) => {
@@ -321,14 +387,13 @@
                 // Specify the parameters
                 const params = {
                     project_id: project_id,
-                    range: range,
                 };
 
                 // Construct the full URL with encoded parameters
                 const fullUrl = apiUrl + "?" + encodeParams(params);
 
                 // Make the fetch request
-               return fetch(fullUrl)
+                return fetch(fullUrl)
                     .then((response) => {
                         if (!response.ok) {
                             throw new Error(
@@ -348,106 +413,194 @@
             }
         </script>
         <script async>
-            function renderChart(project1, project2, project3) {
-                console.log(project1, project2, project3);
-                window.ApexCharts &&
-                    new ApexCharts(
-                        document.getElementById("chart-social-referrals"),
-                        {
-                            chart: {
-                                type: "line",
-                                fontFamily: "inherit",
-                                height: 288,
-                                parentHeightOffset: 0,
-                                toolbar: {
-                                    show: false,
-                                },
-                                animations: {
-                                    enabled: false,
-                                },
+            function renderChart(project1, project2) {
+                console.log(project1, project2);
+                var chart_1 = new ApexCharts(
+                    document.getElementById("chart-social-referrals"),
+                    {
+                        chart: {
+                            type: "line",
+                            fontFamily: "inherit",
+                            height: 288,
+                            parentHeightOffset: 0,
+                            toolbar: {
+                                show: false,
                             },
-                            fill: {
-                                opacity: 1,
+                            animations: {
+                                enabled: false,
                             },
-                            stroke: {
-                                width: 2,
-                                lineCap: "round",
-                                curve: "smooth",
+                        },
+                        fill: {
+                            opacity: 1,
+                        },
+                        stroke: {
+                            width: 2,
+                            lineCap: "round",
+                            curve: "smooth",
+                        },
+                        series: [
+                            {
+                                name: "Success",
+                                data: project1.success.count,
                             },
-                            series: [
-                                {
-                                    name: "User 1",
-                                    data: project1.count,
-                                },
-                                {
-                                    name: "User 2",
-                                    data: project2.count,
-                                },
-                                {
-                                    name: "User 3",
-                                    data: project3.count,
-                                },
-                            ],
-                            tooltip: {
-                                theme: "dark",
+                            {
+                                name: "Failed",
+                                data: project1.failed.count,
                             },
-                            grid: {
-                                padding: {
-                                    top: -20,
-                                    right: 0,
-                                    left: -4,
-                                    bottom: -4,
-                                },
-                                strokeDashArray: 4,
-                                xaxis: {
-                                    lines: {
-                                        show: true,
-                                    },
-                                },
+                        ],
+                        tooltip: {
+                            theme: "dark",
+                        },
+                        grid: {
+                            padding: {
+                                top: -20,
+                                right: 0,
+                                left: -4,
+                                bottom: -4,
                             },
+                            strokeDashArray: 4,
                             xaxis: {
-                                labels: {
-                                    padding: 0,
-                                },
-                                tooltip: {
-                                    enabled: false,
+                                lines: {
+                                    show: true,
                                 },
                             },
-                            yaxis: {
-                                labels: {
-                                    padding: 4,
+                        },
+                        xaxis: {
+                            labels: {
+                                padding: 0,
+                            },
+                            tooltip: {
+                                enabled: false,
+                            },
+                        },
+                        yaxis: {
+                            labels: {
+                                padding: 4,
+                            },
+                        },
+                        labels: project1.success.timestamp,
+                        colors: [
+                            tabler.getColor("facebook"),
+                            tabler.getColor("dribbble"),
+                        ],
+                        legend: {
+                            show: true,
+                            position: "bottom",
+                            offsetY: 12,
+                            markers: {
+                                width: 10,
+                                height: 10,
+                                radius: 100,
+                            },
+                            itemMargin: {
+                                horizontal: 8,
+                                vertical: 8,
+                            },
+                        },
+                    }
+                );
+                chart_1.render();
+
+                var chart2 = new ApexCharts(
+                    document.getElementById("chart-social-referrals-2"),
+                    {
+                        chart: {
+                            type: "line",
+                            fontFamily: "inherit",
+                            height: 288,
+                            parentHeightOffset: 0,
+                            toolbar: {
+                                show: false,
+                            },
+                            animations: {
+                                enabled: false,
+                            },
+                        },
+                        fill: {
+                            opacity: 1,
+                        },
+                        stroke: {
+                            width: 2,
+                            lineCap: "round",
+                            curve: "smooth",
+                        },
+                        series: [
+                            {
+                                name: "Success",
+                                data: project2.success.count,
+                            },
+                            {
+                                name: "Failed",
+                                data: project2.failed.count,
+                            },
+                        ],
+                        tooltip: {
+                            theme: "dark",
+                        },
+                        grid: {
+                            padding: {
+                                top: -20,
+                                right: 0,
+                                left: -4,
+                                bottom: -4,
+                            },
+                            strokeDashArray: 4,
+                            xaxis: {
+                                lines: {
+                                    show: true,
                                 },
                             },
-                            labels: project1.timestamp,
-                            colors: [
-                                tabler.getColor("facebook"),
-                                tabler.getColor("twitter"),
-                                tabler.getColor("dribbble"),
-                            ],
-                            legend: {
-                                show: true,
-                                position: "bottom",
-                                offsetY: 12,
-                                markers: {
-                                    width: 10,
-                                    height: 10,
-                                    radius: 100,
-                                },
-                                itemMargin: {
-                                    horizontal: 8,
-                                    vertical: 8,
-                                },
+                        },
+                        xaxis: {
+                            labels: {
+                                padding: 0,
                             },
-                        }
-                    ).render();
+                            tooltip: {
+                                enabled: false,
+                            },
+                        },
+                        yaxis: {
+                            labels: {
+                                padding: 4,
+                            },
+                        },
+                        labels: project1.success.timestamp,
+                        colors: [
+                            tabler.getColor("facebook"),
+                            tabler.getColor("dribbble"),
+                        ],
+                        legend: {
+                            show: true,
+                            position: "bottom",
+                            offsetY: 12,
+                            markers: {
+                                width: 10,
+                                height: 10,
+                                radius: 100,
+                            },
+                            itemMargin: {
+                                horizontal: 8,
+                                vertical: 8,
+                            },
+                        },
+                    }
+                );
+                chart2.render();
+            }
+
+            function renderTotal(project1, project2) {
+                var element1 = document.getElementById("project-1-total");
+                var element2 = document.getElementById("project-2-total");
+                element1.innerHTML = project1.total;
+                element2.innerHTML = project2.total;
             }
 
             async function load() {
                 // @formatter:off
-                var project1 = await fetchData("project-id-1", "1_day");
-                var project2 = await fetchData("project-id-2", "1_day");
-                var project3 = await fetchData("project-id-3", "1_day");
-                renderChart(project1, project2, project3);
+                var project1 = await fetchData("project-id-1");
+                var project2 = await fetchData("project-id-2");
+                renderChart(project1, project2);
+                renderTotal(project1, project2);
             }
 
             load();

@@ -83,7 +83,7 @@ if __name__ == '__main__':
         while True:
             time.sleep(delay)
             # JSON data to be produced
-            random_number = 0
+            random_number = random.randint(0, 2)
             random_number2 = random.randint(0, 10)
             json_data = requests[random_number]
             local_tz = pytz.timezone('Asia/Bangkok')
@@ -96,7 +96,7 @@ if __name__ == '__main__':
             json_data["session"] = session
             # Randon event status
             status = "PREDICT_COMPLETED"
-            if random_number2 > 6:
+            if random_number2 > 4:
                 status = "PREDICT_FAILED"
 
             json_data["data"]["event"] = status
